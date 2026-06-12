@@ -1,4 +1,4 @@
-print("===== E-COMMERCE SYSTEM =====")
+print("  E-COMMERCE SYSTEM   ")
 
 username = input("Enter Username: ")
 password = input("Enter Password: ")
@@ -47,13 +47,12 @@ else:
     print("Access Denied!")
     exit()
 
-print("\n===== PRODUCT PURCHASE =====")
+print("\n PRODUCT PURCHASE ")
 
 subtotal = float(input("Enter Product Subtotal: "))
 coupon = input("Enter Coupon Code: ")
 location = input("Enter Location (Uganda, Rwanda, Kenya): ")
 
-# DISCOUNT SECTION
 if subtotal >= 500000:
 
     discount_rate = 20
@@ -114,7 +113,7 @@ else:
     else:
         coupon_rate = 0
 
-# TAX SECTION (SWITCH STATEMENT)
+
 match location:
 
     case "Uganda":
@@ -129,7 +128,6 @@ match location:
     case _:
         tax_rate = 20
 
-# CALCULATIONS
 discount_amount = subtotal * discount_rate / 100
 coupon_discount = subtotal * coupon_rate / 100
 
@@ -140,7 +138,7 @@ tax_amount = amount_after_discount * tax_rate / 100
 final_price = amount_after_discount + tax_amount
 
 # RECEIPT
-print("\n===== RECEIPT =====")
+print("\n RECEIPT ")
 print("User Role:", role)
 print("Subtotal:", subtotal)
 print("Discount Rate:", discount_rate, "%")
@@ -149,4 +147,3 @@ print("Coupon Discount:", coupon_discount)
 print("Tax Rate:", tax_rate, "%")
 print("Tax Amount:", tax_amount)
 print("Final Price:", final_price)
-print("===================")
