@@ -1,0 +1,17 @@
+{
+    "2025/SE/001": {
+        "Address": "Kampala",
+        "Contact": "0771234567",
+        "Program": "Software Engineering"
+    },
+    "2025/SE/002": {
+        "Address": "Mbarara",
+        "Contact": "0709876543",
+        "Program": "Computer Science"
+    },
+    "2025/SE/003": {
+        "Address": "Gulu",
+        "Contact": "0781122334",
+        "Program": "Information Systems"
+    }
+}

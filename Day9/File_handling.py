@@ -1,0 +1,1 @@
+file = open("C:\Users\User\Recess Term\Gihozo_Patrick\Day9\Students.txt","r")

@@ -1,0 +1,38 @@
+2026-06-28 22:57:57,342 - INFO - Student Added : 1234
+2026-06-28 23:27:29,849 - ERROR - 'RegistrationNo'
+2026-06-28 23:29:13,102 - ERROR - 'RegistrationNo'
+2026-06-28 23:29:29,733 - WARNING - Program interrupted using keyboard.
+2026-06-28 23:39:17,357 - ERROR - 'RegistrationNo'
+2026-06-28 23:39:58,477 - ERROR - 'RegistrationNo'
+2026-06-28 23:40:53,971 - WARNING - Program interrupted using keyboard.
+2026-06-28 23:47:02,981 - ERROR - 'RegistrationNo'
+2026-06-28 23:52:39,049 - ERROR - Unexpected Error
+Traceback (most recent call last):
+  File "C:\Users\User\Recess Term\Gihozo_Patrick\File_Handling assignement\student_ management.py", line 165, in add_student
+    if student_exists(reg):
+       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Recess Term\Gihozo_Patrick\File_Handling assignement\student_ management.py", line 150, in student_exists
+    if student["RegistrationNo"] == reg_no:
+       ~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 'RegistrationNo'
+2026-06-28 23:53:07,648 - WARNING - Program interrupted using keyboard.
+2026-06-28 23:56:05,032 - ERROR - Unexpected Error
+Traceback (most recent call last):
+  File "C:\Users\User\Recess Term\Gihozo_Patrick\File_Handling assignement\student_ management.py", line 165, in add_student
+    if student_exists(reg):
+       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Recess Term\Gihozo_Patrick\File_Handling assignement\student_ management.py", line 150, in student_exists
+    if student["RegistrationNo"] == reg_no:
+       ~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 'RegistrationNo'
+2026-06-28 23:56:26,924 - WARNING - Program interrupted using keyboard.
+2026-06-28 23:56:47,211 - ERROR - Unexpected Error
+Traceback (most recent call last):
+  File "C:\Users\User\Recess Term\Gihozo_Patrick\File_Handling assignement\student_ management.py", line 165, in add_student
+    if student_exists(reg):
+       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Recess Term\Gihozo_Patrick\File_Handling assignement\student_ management.py", line 150, in student_exists
+    if student["RegistrationNo"] == reg_no:
+       ~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 'RegistrationNo'
+2026-06-28 23:57:29,626 - WARNING - Program interrupted using keyboard.
