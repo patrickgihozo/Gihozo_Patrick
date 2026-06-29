@@ -1,0 +1,15 @@
+2026-06-29 07:34:13,325 - INFO - Viewed all student records.
+2026-06-29 07:35:10,618 - INFO - Student Added : 2025/SE/005
+2026-06-29 07:36:46,965 - WARNING - Program interrupted using keyboard.
+2026-06-29 07:41:14,515 - INFO - Viewed all student records.
+2026-06-29 07:42:36,053 - INFO - Searched Student : 2025/SE/002
+2026-06-29 07:42:48,575 - WARNING - Invalid menu choice: 2024/se/2
+2026-06-29 07:43:16,205 - WARNING - Search failed for 2024/se/2
+2026-06-29 07:44:02,453 - INFO - Updated Student : 2025/SE/003
+2026-06-29 07:44:02,481 - WARNING - Invalid menu choice: 
+2026-06-29 07:44:02,503 - WARNING - Invalid menu choice: 
+2026-06-29 07:44:02,535 - WARNING - Invalid menu choice: 
+2026-06-29 07:44:02,565 - WARNING - Invalid menu choice: 
+2026-06-29 07:44:47,098 - INFO - System exited successfully.
+2026-06-29 08:10:36,112 - INFO - Student Added : 23/4/5
+2026-06-29 08:15:36,876 - WARNING - Program interrupted using keyboard.

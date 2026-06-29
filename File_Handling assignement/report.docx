@@ -1,0 +1,28 @@
+STUDENT RECORD MANAGEMENT SYSTEM
+
+Our system has three files which are :
+1.students.csv which stores the basic student information . We used csv because it is good at storing data in rows and columns like excel.
+
+2.students.json : Some other information that are not well fit in csv, were kept here for instance address, contact,... JSON keeps information in key value pair and it is well linked to csv by the student reg number.
+
+3.student_system.log : This file records any action performed to above files. Either adding a student or any other.It records any action performed by main codes and records that logs.
+
+So,a menu-driven application stores student records using CSV and JSON files.
+
+ Features
+
+ 1. Add Student
+ 2. View Students
+ 3. Search Student
+ 4. Update Student
+ 5. Delete Student
+
+ The system Demonstrates:
+ - File Handling
+ - CSV Files
+ - JSON Files
+ - Exception Handling
+ - Custom Exceptions
+ - Logging
+ - Functions
+ - Input Validation

@@ -4,15 +4,17 @@ import json
 import logging
 import os
 
+#Loading files 
 CSV_FILE = "students.csv"
 JSON_FILE = "students.json"
 LOG_FILE = "student_system.log"
 
+# Write logging info when logging.info() or logging.error() is called.
 logging.basicConfig(
     filename=LOG_FILE,
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s"
-)
+) 
 
 
 class StudentExistsError(Exception):
@@ -21,11 +23,8 @@ class StudentExistsError(Exception):
     """
     pass
 
+#Creates CSV and JSON files automatically if they do not exist.
 def initialize_files():
-    """
-    Creates CSV and JSON files if they do not exist.
-    """
-
     try:
 
         if not os.path.exists(CSV_FILE):
@@ -53,6 +52,8 @@ def initialize_files():
 
         logging.error(f"Initialization Error : {e}")
 
+
+#Read the files and return the list of students
 def load_students():
 
     students = []
@@ -80,7 +81,7 @@ def load_students():
 
     return students
 
-
+# Save everything into CSV whenever you add,update or delete a student
 def save_students(student_list):
 
     try:
@@ -104,7 +105,7 @@ def save_students(student_list):
 
         logging.error(e)
 
-
+#Loads data from JSON file
 def load_details():
 
     try:
@@ -127,7 +128,7 @@ def load_details():
 
         return {}
 
-
+#Save in JSON file
 def save_details(details):
 
     try:
@@ -140,7 +141,7 @@ def save_details(details):
 
         logging.error(e)
 
-
+#Verify student by reg No
 def student_exists(reg_no):
 
     students = load_students()
@@ -153,12 +154,12 @@ def student_exists(reg_no):
 
     return False
 
-
+#Check whether student exists and if not, Record details and save the students in CSV and JSON file
 def add_student():
 
     try:
 
-        print("\n===== ADD NEW STUDENT =====")
+        print("\n    ADD NEW STUDENT     ")
 
         reg = input("Registration Number : ").strip()
 
@@ -238,7 +239,7 @@ def add_student():
 
         print("Add Student Operation Completed.\n")
         
-
+#Read basic student info from both CSV and JSON file, combine the information using reg number and display the records on the screen
 def view_students():
     
     try:
@@ -283,7 +284,7 @@ def view_students():
 
         print()
         
-        
+# Searches for a student using the registration number.    If the student exists, the function displays both the basic information from the CSV file and the additionaldetails from the JSON file. It also logs successful searches and records any errors encountered.    
 def search_student():
     try:
 
@@ -334,14 +335,9 @@ def search_student():
 
         print()
 
-
+#Updates a student's information.
 def update_student():
-    """
-    Updates a student's information.
-    """
-
     try:
-
         reg = input("\nEnter Registration Number to Update: ").strip()
 
         students = load_students()
@@ -436,12 +432,8 @@ def update_student():
 
         print()
 
-
+#Deletes a student record.
 def delete_student():
-    """
-    Deletes a student record.
-    """
-
     try:
 
         reg = input("\nEnter Registration Number to Delete: ").strip()
@@ -490,12 +482,8 @@ def delete_student():
 
         print()
         
-
+#Displays the main menu.  
 def display_menu():
-    """
-    Displays the main menu.
-    """
-
     print("\n" + "=" * 50)
     print("      STUDENT RECORD MANAGEMENT SYSTEM")
     print("=" * 50)
@@ -507,12 +495,8 @@ def display_menu():
     print("6. Exit")
     print("=" * 50)
 
-
+#Main program loop.
 def main():
-    """
-    Main program loop.
-    """
-
     # Create files if they don't exist
     initialize_files()
 
