@@ -36,3 +36,6 @@ Traceback (most recent call last):
        ~~~~~~~^^^^^^^^^^^^^^^^^^
 KeyError: 'RegistrationNo'
 2026-06-28 23:57:29,626 - WARNING - Program interrupted using keyboard.
+2026-06-29 07:25:27,178 - ERROR - 'RegistrationNo'
+2026-06-29 07:28:57,476 - WARNING - Program interrupted using keyboard.
+2026-06-29 07:29:43,021 - WARNING - Program interrupted using keyboard.
