@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}Edit Student - Student Information System{% endblock %}
+
+{% block content %}
+<section class="register-page">
+    <h2>Edit Student</h2>
+    <div class="form-container">
+        <form method="POST"
+              action="{{ url_for('edit_student', student_id=student.id) }}"
+              class="registration-form">
+            <div class="form-group">
+                <label for="student_name">Student Name *</label>
+                <input type="text" id="student_name" name="student_name"
+                       value="{{ form_data.get('student_name', student.student_name) if form_data else student.student_name }}"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="registration_number">Registration Number *</label>
+                <input type="text" id="registration_number" name="registration_number"
+                       value="{{ form_data.get('registration_number', student.registration_number) if form_data else student.registration_number }}"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email"
+                       value="{{ form_data.get('email', student.email) if form_data else student.email }}"
+                       required>
+            </div>
+
+            {% set selected_programme = form_data.get('programme', student.programme) if form_data else student.programme %}
+            <div class="form-group">
+                <label for="programme">Programme of Study *</label>
+                <select id="programme" name="programme" required>
+                    {% for programme in ['Computer Science', 'Information Technology', 'Software Engineering', 'Data Science'] %}
+                        <option value="{{ programme }}" {% if selected_programme == programme %}selected{% endif %}>
+                            {{ programme }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Save Changes</button>
+                <a href="{{ url_for('students_list') }}" class="btn btn-secondary">Cancel</a>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}
